@@ -115,10 +115,10 @@ img {
 img {
   display: inline-block;
   vertical-align: middle; 
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;}
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;}
 
 textarea {
   height: auto;
@@ -3715,21 +3715,21 @@ td {
 /* Default Link Styles */
 a {
   padding: 0.85rem;
-  background-color: #DCE9F7;
-  color: #527DB1;
+/*  background-color: #DCE9F7;
+*/  color: #527DB1;
   font-family: roboto-light;
   line-height: inherit;
   text-decoration: none; }
   a:hover, a:focus {
     color: #0078a0; 
-    background-color: #C2D7F1;}
+    /*background-color: #C2D7F1;*/}
   a img {
     border: none; }
 
 /* Default paragraph styles */
 p {
-  font-family: inherit;
-  font-size: 1rem;
+  font-family: roboto-light;
+  font-size: 1.1rem;
   font-weight: normal;
   line-height: 1.6;
   margin-bottom: 1.25rem;
@@ -3754,11 +3754,21 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;}
 
 h1 {
-  color: #DCE9F7; 
-  background-color: #669CDD;
+  color: #527DB1; 
+  background: url("h1Background.png");
   text-align: center;
   font-family: roboto-lightitalic;
   padding: 1.25rem;
+}
+
+h4{
+  color: #527DB1; 
+  font-family: roboto-light;
+  padding-bottom: 1rem;
+}
+
+li{
+  color: #000000;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
@@ -3829,8 +3839,9 @@ code {
 ul,
 ol,
 dl {
-  font-family: inherit;
-  font-size: 1rem;
+  color: #527DB1;
+  font-family: roboto-light;
+  font-size: 1.2rem;
   line-height: 1.6;
   list-style-position: outside;
   margin-bottom: 1.25rem; }
@@ -6349,3 +6360,22 @@ th.hide-for-touch {
 @media not print {
   .show-for-print {
     display: none !important; } }
+
+
+/* my stuff: */
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    width: 970px;
+}
+.caption {
+    display: block;
+}
+
+div.mylink {
+  color: #527DB1; 
+  font-size: 1.5rem;
+  font-family: roboto-light;
+  text-align: center;
+}
