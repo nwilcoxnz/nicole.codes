@@ -61,8 +61,7 @@ body {
   background: #fff;
   color: #222;
   cursor: auto;
-  font-family: 'Roboto', sans-serif;
-  /*font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;*/
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -6381,4 +6380,19 @@ div.mylink {
   text-align: center;
 }
 
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+    WebFontConfig = {
+      google: { families: [ 'Roboto:400,300,300italic:latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })(); 
+</script>
+
+
