@@ -1,43 +1,137 @@
-<!DOCTYPE HTML>
-<html manifest="cache.appcache" class="no-js" lang="en"> 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Nicole Wilcox</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script> 
-  </head>
-  <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Nicole Wilcox</h1>
-      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <script>
+        function showContactModal() {
+            $('#contact_details').modal({ backdrop: 'static', keyboard: false })
+        }
+        function hideContactModal() {
+            $('#contact_details').modal("hide")
+        }
+    </script>
+    <style>
+        #contact_details {
+            position: absolute; 
+            top: 30%;
+            opacity: 0.9;
+        }
+
+    </style>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">Nicole Wilcox</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+<!--                     <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li> -->
+                    <li>
+                        <a href="#contact" id="contact_navbar" name="contact_navbar" onclick="showContactModal()">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+        <div id="contact_details" class="modal fade col-md-2 col-md-offset-5 contact_details">
+            <div class="modal-body panel default" style="margin: auto; text-align: center">
+                <h4>Nicole Wilcox</h4>
+                <br/>
+                <p>nwilcoxnz@gmail.com</p>
+                <a href="https://plus.google.com/u/0/114314148753232134681/posts">Google+</a>
+                <br/>
+                <br/>
+                <button class="btn" style="background:none;" onclick="hideContactModal()">Close</button>
+            </div>
+        </div>
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header" style="height: 100%; vertical-align: center">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Nicole Wilcox</h1>
+                        <h3 >Graduate Software Developer</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <!-- <li>
+                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            </li> -->
+                            <li>
+                                <a href="https://github.com/nwilcoxnz" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            </li>
+                            <li>
+                                <a href="https://nz.linkedin.com/in/nwilcoxnz" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
     </div>
+    <!-- /.intro-header -->
 
-    <div class="top-bar" >
-      <p><a href="#" class="button.large" style = "background-color: #A8C7EB;">Home</a>
-      <a href="AboutMe.html" class="button.large">About Me</a>  
-      <a href="Projects.html" class="button.large">Projects</a>  
-      <a href="ContactMe.html" class="button.large">Contact Me</a></p> 
-    </div>
+</body>
 
-    <div style="position: relative;">
-    	<hr />
-    </div>
-
-    <img src="nicoleLogo.png" align="middle" style="height: 567px;">
-
-  </body>
-
-  	<!-- Analytics -->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-63667437-1', 'auto');
-		ga('send', 'pageview');
-
-	</script>
 </html>
