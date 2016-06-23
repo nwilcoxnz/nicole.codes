@@ -37,17 +37,7 @@ h6 {
     color: #f8f8f8;
     background: url(../img/raglan2.jpg) no-repeat center center;
     background-size: cover;
-}
-
-/* For width 400px and larger: */
-@media only screen and (max-width: 400px) {
-    .intro-header {
-        padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-        padding-bottom: 50px;
-        text-align: center;
-        color: #f8f8f8;
-        background: url(../img/raglan2.jpg) no-repeat center center;
-    }
+    height: 100%
 }
 
 .intro-message {
