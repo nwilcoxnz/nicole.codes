@@ -67,6 +67,10 @@ body{
 	color: #83aee2;
 	display:inline-block;
 }
+.about-container {
+	width: 60%;
+	margin-left: 20%;
+}
 h1,
 h2,
 h3,
@@ -97,7 +101,19 @@ header {
 	    margin: 0;
 	}
 }
-@media (max-width: 600px){
+@media (max-width: 1160px){
+	.about-container {
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+@media (max-width: 920px){
+	.about-container {
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+@media (max-width: 650px){
 	.intro-header  {
 		height: 300px;
 	}
@@ -111,6 +127,17 @@ header {
 @media (max-width: 477px){
 	.icon {
 		font-size: 40px;
-		margin: 10px;
+		margin: 5px;
+	}
+	.page-section {
+		margin: 30px;
+	}
+}
+@media (max-width: 327px){
+	.about-container {
+		width: 100%;
+	}
+	.page-section {
+		margin: 20px;
 	}
 }
