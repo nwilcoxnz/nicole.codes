@@ -1,0 +1,116 @@
+/*blue: #669cdd*/
+body{
+	font-weight: 300;
+}
+#contact-content {
+	padding: 50px;
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+    background: white;
+}
+.navbar-brand {
+	font-size: 30px;
+}
+.navbar-toggle ,
+.navbar-custom {
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding: 0px;
+}
+.navbar-custom {
+	padding: 15px;
+	height: 80px;
+}
+.navbar-collapse{
+	float: none;
+	text-align: center;
+}
+.page-scroll {
+	color: #669cdd;
+}
+.intro-header {
+	/*text-align: center;*/
+	/*padding-top: 200px;*/
+	/*left: 50%;*/
+	margin-right: 50%;
+	float: none;
+	height: 500px;
+	position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.page-section {
+	margin: 50px;
+}
+.section {
+	text-align: center;
+	padding: 20px;
+	/*background: #ccc;*/
+}
+.page {
+	display: none;
+}
+.bullet-list-centre {
+  margin-left: 40%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.icon {
+	font-size: 100px;
+	margin: 20px;
+	color: #83aee2;
+	display:inline-block;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-transform: uppercase;
+	color: #669cdd;
+}
+hr {
+	border-top: 5px solid #669cdd;
+	width: 20%;
+}
+header {
+	margin-top: -100px;
+	/*background-image: url('../img/nicoleLogo.png');*/
+	height: 600px;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+@media (min-width: 768px){
+	.navbar-nav {
+		/*float: none;*/
+	    margin: 0;
+	}
+}
+@media (max-width: 600px){
+	.intro-header  {
+		height: 300px;
+	}
+	header {
+		height: 500px;
+	}
+	.icon {
+		font-size: 60px;
+	}
+}
+@media (max-width: 477px){
+	.icon {
+		font-size: 40px;
+		margin: 10px;
+	}
+}
