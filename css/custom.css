@@ -84,8 +84,7 @@ hr {
 	width: 20%;
 }
 header {
-	margin-top: -100px;
-	/*background-image: url('../img/nicoleLogo.png');*/
+	/*margin-top: -100px;*/
 	height: 600px;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
