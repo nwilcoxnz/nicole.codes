@@ -32,27 +32,15 @@ body{
 	color: #669cdd;
 }
 .nicole-logo {
+	margin-left: 60px;
 	width: 500px;
 }
-/*.intro-header {
-	margin-top: 50px;
-	margin-right: 50%;
-	float: none;
-	height: 500px;
-	position: absolute;
-    top: 30%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}*/
 .page-section {
 	margin: 50px;
 }
-.section {
+.home-main-section {
 	text-align: center;
 	padding: 20px;
-	/*background: #ccc;*/
 }
 .page {
 	display: none;
@@ -84,17 +72,6 @@ hr {
 	border-top: 5px solid #669cdd;
 	width: 20%;
 }
-/*header {
-	margin-top: -100px;
-	height: 600px;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-position: center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}*/
 @media (min-width: 768px){
 	.navbar-nav {
 		/*float: none;*/
@@ -114,6 +91,9 @@ hr {
 	}
 }
 @media (max-width: 650px){
+	.home-main-section {
+		margin-top: -50px;
+	}
 	.nicole-logo  {
 		width: 400px;
 	}
@@ -126,6 +106,7 @@ hr {
 }
 @media (max-width: 477px){
 	.nicole-logo  {
+		margin-left: 25px;
 		width: 300px;
 	}
 	.icon {
@@ -137,6 +118,12 @@ hr {
 	}
 }
 @media (max-width: 327px){
+	
+}
+@media (max-width: 327px){
+	.nicole-logo  {
+		margin-left: -20px;
+	}
 	.about-container {
 		width: 100%;
 	}
