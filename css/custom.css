@@ -60,6 +60,11 @@ body{
 	width: 60%;
 	margin-left: 20%;
 }
+.section {
+	text-align: center;
+	padding: 20px;
+	/*background: #ccc;*/
+}
 h1,
 h2,
 h3,
@@ -107,7 +112,7 @@ hr {
 @media (max-width: 477px){
 	.nicole-logo  {
 		margin-left: 25px;
-		width: 250px;
+		width: 200px;
 	}
 	.icon {
 		font-size: 40px;
