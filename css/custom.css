@@ -2,6 +2,13 @@
 body{
 	font-weight: 300;
 }
+.nav-btn {
+	border: none;
+	background: transparent;
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-transform: uppercase;
+	padding: 12px;
+}
 #contact-content {
 	padding: 50px;
 }
