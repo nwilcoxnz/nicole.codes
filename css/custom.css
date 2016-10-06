@@ -107,7 +107,7 @@ hr {
 @media (max-width: 477px){
 	.nicole-logo  {
 		margin-left: 25px;
-		width: 300px;
+		width: 250px;
 	}
 	.icon {
 		font-size: 40px;
@@ -116,9 +116,6 @@ hr {
 	.page-section {
 		margin: 30px;
 	}
-}
-@media (max-width: 327px){
-	
 }
 @media (max-width: 327px){
 	.nicole-logo  {
